@@ -22,6 +22,9 @@ steps:
       - --project=$_SERVICE_PROJECT
       - --region=$_SERVICE_REGION
       - --image=$_SERVICE_IMAGE
+      
+options:
+  logging: CLOUD_LOGGING_ONLY
 
 images: # Display the image in the build results - Build Artifacts
 - $_SERVICE_IMAGE
